@@ -1,0 +1,143 @@
+//6. Створити клас Smartphones, в якому міститься набір з 5 смартфонів, для
+//кожного з смартфонів визначені 4характеристики: колекція кольорів в якому
+//він представлена, рік випуску і ціна. Четверту характеристику оберіть самі.
+//Реалізувати можливість для покупця обрати смартфон з набору за його
+//параметрами. Повідомити якщо не існує смартфона з потрібними
+//параметрами, якщо існує – вивести на екран повний опис смартфона.
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.Remoting.Metadata.W3cXsd2001;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp4
+{
+    class Smartphones
+    {
+        public string color;
+        public int year;
+        public int price;
+        public int ram;
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int n = 0;
+            Smartphones Apple = new Smartphones();
+            Apple.color = "Red";
+            Apple.year = 2020;
+            Apple.price = 20000;
+            Apple.ram = 6;
+            Smartphones Samsung  = new Smartphones();
+            Samsung.color = "Black";
+            Samsung.year = 2019;
+            Samsung.price = 15000;
+            Samsung.ram = 8;
+            Smartphones Xiaomi = new Smartphones();
+            Xiaomi.color = "Blue";
+            Xiaomi.year = 2020;
+            Xiaomi.price = 9000;
+            Xiaomi.ram = 6;
+            Smartphones Honor = new Smartphones();
+            Honor.color = "Blue";
+            Honor.year = 2019;
+            Honor.price = 15000;
+            Honor.ram = 4;
+            Smartphones Huawei = new Smartphones();
+            Huawei.color = "Black";
+            Huawei.year = 2018;
+            Huawei.price = 10000;
+            Huawei.ram = 4;
+            Console.WriteLine("Введите желаемый цвет");
+            string c = Console.ReadLine();
+            Console.WriteLine("Введите желаемый год выпуска");
+            int y = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите желаемую цену");
+            int p = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Введите желаемый объем ОЗУ");
+            int r = Convert.ToInt32(Console.ReadLine());
+            if (Apple.color == c)
+            {
+                if (Apple.year >= y)
+                {
+                    if(Apple.price <= p)
+                    {
+                        if(Apple.ram >= r)
+                        {
+                            n++;
+                            Console.WriteLine("Apple");
+                            Console.WriteLine("Цвет: " + Apple.color + " Год выпуска: " + Apple.year + " Цена: " + Apple.price + "объем ОЗУ: " + Apple.ram);
+                        }
+                    }
+                }
+            }
+            if (Samsung.color == c)
+            {
+                if (Samsung.year >= y)
+                {
+                    if (Samsung.price <= p)
+                    {
+                        if (Samsung.ram >= r)
+                        {
+                            n++;
+                            Console.WriteLine("Samsung");
+                            Console.WriteLine("Цвет: " + Samsung.color + " Год выпуска: " + Samsung.year + " Цена: " + Samsung.price + "объем ОЗУ: " + Samsung.ram);
+                        }
+                    }
+                }
+            }
+            if (Xiaomi.color == c)
+            {
+                if (Xiaomi.year >= y)
+                {
+                    if (Xiaomi.price <= p)
+                    {
+                        if (Xiaomi.ram >= r)
+                        {
+                            n++;
+                            Console.WriteLine("Xiaomi");
+                            Console.WriteLine("Цвет: " + Xiaomi.color + " Год выпуска: " + Xiaomi.year + " Цена: " + Xiaomi.price + "объем ОЗУ: " + Xiaomi.ram);
+                        }
+                    }
+                }
+            }
+            if (Honor.color == c)
+            {
+                if (Honor.year >= y)
+                {
+                    if (Honor.price <= p)
+                    {
+if (Honor.ram >= r)
+                        {
+                            n++;
+                            Console.WriteLine("Honor");
+                            Console.WriteLine("Цвет: " + Honor.color + " Год выпуска: " + Honor.year + " Цена: " + Honor.price + "объем ОЗУ: " + Honor.ram);
+                        }
+                    }
+                }
+            }
+            if (Huawei.color == c)
+            {
+                if (Huawei.year >= y)
+                {
+                    if (Huawei.price <= p)
+                    {
+                        if (Huawei.ram >= r)
+                        {
+                            n++;
+                            Console.WriteLine("Huawei");
+                            Console.WriteLine("Цвет: " + Huawei.color + " Год выпуска: " + Huawei.year + " Цена: " + Huawei.price + "объем ОЗУ: " + Huawei.ram);
+                        }
+                    }
+                }
+            }
+            if (n == 0)
+            {
+                Console.WriteLine("По вашему запросу ничего не найдено");
+            }
+            Console.ReadLine();
+        }
+    }   
+}
