@@ -1,0 +1,47 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            List<string> strings = new List<string>();
+            bool flag = true;
+            string check;
+            
+            int n=0;
+            Console.WriteLine("Enter check row");
+            check = Console.ReadLine();
+            while (flag)
+            {
+                Console.WriteLine("Enter string");
+                strings.Add(Console.ReadLine());
+                Console.WriteLine("Press + to add more)");
+                
+                if (Console.ReadLine() != "+")
+                {
+                    flag = false;
+                }
+            }
+            string[] str = new string[strings.Count];
+            foreach (var item in strings)
+            {
+                int i = 0;
+                i++;
+                str[i] = item;
+                n++;
+                if (item == check)
+                {
+                    Console.WriteLine($" {item} ");
+                    Console.WriteLine($"index: {n} ");
+                }
+            }   
+        }
+
+    }
+}
