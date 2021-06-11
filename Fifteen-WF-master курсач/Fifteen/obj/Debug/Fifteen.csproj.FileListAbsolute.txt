@@ -1,0 +1,9 @@
+C:\Users\NyaKyt\Desktop\Fifteen-WF-master\Fifteen\obj\Debug\Fifteen.csprojAssemblyReference.cache
+C:\Users\NyaKyt\Desktop\Fifteen-WF-master\Fifteen\bin\Debug\Fifteen.exe.config
+C:\Users\NyaKyt\Desktop\Fifteen-WF-master\Fifteen\bin\Debug\Fifteen.exe
+C:\Users\NyaKyt\Desktop\Fifteen-WF-master\Fifteen\bin\Debug\Fifteen.pdb
+C:\Users\NyaKyt\Desktop\Fifteen-WF-master\Fifteen\obj\Debug\Fifteen.MainForm.resources
+C:\Users\NyaKyt\Desktop\Fifteen-WF-master\Fifteen\obj\Debug\Fifteen.csproj.GenerateResource.cache
+C:\Users\NyaKyt\Desktop\Fifteen-WF-master\Fifteen\obj\Debug\Fifteen.csproj.CoreCompileInputs.cache
+C:\Users\NyaKyt\Desktop\Fifteen-WF-master\Fifteen\obj\Debug\Fifteen.exe
+C:\Users\NyaKyt\Desktop\Fifteen-WF-master\Fifteen\obj\Debug\Fifteen.pdb
